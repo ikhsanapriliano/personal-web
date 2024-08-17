@@ -18,7 +18,7 @@ const Modal = () => {
                         initial={{ x: 300, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: -300, opacity: 0 }}
-                        className="bg-white relative h-[550px] w-[1000px] overflow-auto"
+                        className="bg-white relative h-screen xl:h-[550px] w-[1000px] overflow-auto"
                         onClick={(e) => { e.stopPropagation() }}>
                         <div
                             className="fixed w-full xl:w-[1000px] flex justify-end">
