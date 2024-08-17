@@ -10,5 +10,16 @@
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+}
+
+@media (max-width: 700px) {
+  * {
+    scroll-padding-top: 60px;
+  }
+}
+
+@media (min-width: 701px) {
+  * {
+    scroll-padding-top: 80px;
+  }
 }
