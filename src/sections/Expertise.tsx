@@ -10,7 +10,17 @@ const Expertise = ({ expertise }: { expertise: React.RefObject<HTMLDivElement> }
         "Golang",
         "Tailwind",
         "Figma",
-        "Firebase"
+        "Firebase",
+        "Redux",
+        "Zustand",
+        "Node Js",
+        "Express Js",
+        "Websocket",
+        "Postgresql",
+        "Git",
+        "Postman",
+        "Swagger",
+        "Docker"
     ]
 
     return (

@@ -18,6 +18,27 @@ const Portfolio = ({ portfolio }: { portfolio: React.RefObject<HTMLDivElement> }
             image: "/gowesmart/gowesmart-1.jpg",
             desc: "Gowesmart is an e-commerce website specializing in bicycles.",
             path: "/gowesmart"
+        },
+        {
+            id: 2,
+            title: "Society",
+            image: "/society/society-1.jpg",
+            desc: "Society is a web-based chat application (similar to WhatsApp Web).",
+            path: "/society"
+        },
+        {
+            id: 3,
+            title: "Orineko (Freelance Project)",
+            image: "/orineko/orineko-1.jpg",
+            desc: "Orineko is the first freelance project I worked on using React Js.",
+            path: "/orineko"
+        },
+        {
+            id: 4,
+            title: "Review Laptop",
+            image: "/review-laptop/review-laptop-1.jpg",
+            desc: "Review Laptop is a website where users can view and add reviews for laptops.",
+            path: "/review-laptop"
         }
     ]
 
