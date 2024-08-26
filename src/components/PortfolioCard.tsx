@@ -26,7 +26,7 @@ const PortfolioCard = ({ item, current, setCurrent }: PortfolioCard) => {
                 </Link>
                 <div className="py-2 px-3 xl:p-5">
                     <p className="font-semibold md:text-lg">{item.title}</p>
-                    <p className="max-h-[23px] md:max-h-fit overflow-hidden">{item.desc}</p>
+                    <p>{item.desc}</p>
                     <div className="flex w-full justify-end mt-2">
                         <Link to={item.path} className="font-semibold hover:opacity-80 flex items-center">Details <i className="fa-solid fa-arrow-right-long ml-1"></i></Link>
                     </div>
