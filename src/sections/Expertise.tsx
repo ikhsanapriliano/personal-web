@@ -1,6 +1,6 @@
 import Skill from "../components/Skill"
 
-const Expertise = () => {
+const Expertise = ({ expertise }: { expertise: React.RefObject<HTMLDivElement> }) => {
     const skills = [
         "HTML / CSS",
         "Javascript",
@@ -14,7 +14,7 @@ const Expertise = () => {
     ]
 
     return (
-        <section id="expertise" className="flex flex-col justify-center px-5 xl:px-10 py-10 gap-5 text-[12px] xl:text-[16px]">
+        <section ref={expertise} id="expertise" className="flex flex-col justify-center px-5 xl:px-10 py-10 gap-5 text-[12px] xl:text-[16px]">
             <h2 className="text-xl font-semibold">Expertise</h2>
             <div className="grid grid-cols-2 xl:flex gap-3 flex-wrap">
                 {

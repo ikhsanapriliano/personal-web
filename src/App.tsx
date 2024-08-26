@@ -1,24 +1,20 @@
-import About from "./sections/About"
-import Experience from "./sections/Experience"
-import Expertise from "./sections/Expertise"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Main from "./pages/Main"
 import Footer from "./sections/Footer"
 import Header from "./sections/Header"
-import Home from "./sections/Home"
-import Portfolio from "./sections/Portfolio"
+import Gowesmart from "./pages/Gowesmart"
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <main className="container mx-auto">
-        <Home />
-        <About />
-        <Expertise />
-        <Experience />
-        <Portfolio />
-      </main>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/gowesmart" element={<Gowesmart />} />
+        <Route path="*" element={<Main />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 

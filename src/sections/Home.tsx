@@ -1,6 +1,6 @@
-const Home = () => {
+const Home = ({ home }: { home: React.RefObject<HTMLDivElement> }) => {
     return (
-        <section id="home" className="pt-[80px] h-screen flex flex-col xl:flex-row gap-5 xl:gap-20 justify-center items-center px-5 xl:px-0">
+        <section ref={home} id="home" className="pt-[80px] h-screen flex flex-col xl:flex-row gap-5 xl:gap-20 justify-center items-center px-5 xl:px-0">
             <div className="w-[150px] h-[150px] xl:w-[300px] xl:h-[300px] overflow-hidden relative rounded-full">
                 <img src={"/profile.jpg"} alt="profile" className="absolute top-[-30px] xl:top-[-50px]" />
             </div>
