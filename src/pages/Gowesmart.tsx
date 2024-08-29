@@ -52,7 +52,7 @@ const Gowesmart = () => {
     return (
         <main ref={ref} className="min-h-screen pt-[80px] container mx-auto">
             <section className="md:pt-5">
-                <div className={`w-full ${width > 350 ? "h-[180px]" : "h-[140px]"} ${width > 400 ? "h-[200px]" : ""} md:h-[300px] xl:h-[600px] overflow-hidden`}>
+                <div className={`w-full h-auto overflow-hidden`}>
                     <img src={current} alt="gowesmart" className="w-full h-auto" />
                 </div>
                 <div className="h-[60px] md:h-[150px]">

@@ -20,7 +20,9 @@ const Expertise = ({ expertise }: { expertise: React.RefObject<HTMLDivElement> }
         "Git",
         "Postman",
         "Swagger",
-        "Docker"
+        "Docker",
+        "CI/CD",
+        "Github Actions"
     ]
 
     return (

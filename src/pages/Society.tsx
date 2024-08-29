@@ -10,6 +10,7 @@ const Society = () => {
         "/society/society-2.jpg",
         "/society/society-3.jpg",
         "/society/society-4.jpg",
+        "/society/society-5.jpg",
     ]
     const [current, setCurrent] = useState(images[0])
 
@@ -46,7 +47,7 @@ const Society = () => {
     return (
         <main ref={ref} className="min-h-screen pt-[80px] container mx-auto">
             <section className="md:pt-5">
-                <div className={`w-full ${width > 350 ? "h-[180px]" : "h-[140px]"} ${width > 400 ? "h-[200px]" : ""} md:h-[300px] xl:h-[600px] overflow-hidden`}>
+                <div className={`w-full h-fit overflow-hidden`}>
                     <img src={current} alt="gowesmart" className="w-full h-auto" />
                 </div>
                 <div className="h-[60px] md:h-[150px]">
@@ -66,15 +67,16 @@ const Society = () => {
                     <div>
                         <h2 className="font-semibold text-lg xl:text-xl">Key Features</h2>
                         <ul className="list-disc list-inside">
-                            <li>Responsive website design for desktop, tablet, and mobile devices (in progress).</li>
+                            <li>Responsive website design for desktop, tablet, and mobile devices.</li>
                             <li>Registration and login with JWT (JSON Web Token) implementation.</li>
                             <li>Chat history search based on message content and unread status.</li>
                             <li>User search based on username and email.</li>
                             <li>Real-time chatting feature using WebSocket.</li>
                             <li>Real-time user status indicating whether they are online or offline.</li>
                             <li>Real-time message read status updates.</li>
-                            <li>Integration with Firebase Cloud Storage for profile photo and chat document storage (in progress).</li>
-                            <li>Profile editing feature (in progress).</li>
+                            <li>Integration with Firebase Cloud Storage for profile photo and chat document storage.</li>
+                            <li>Profile editing feature.</li>
+                            <li>Implementing CI/CD with Github Actions.</li>
                         </ul>
                     </div>
                     <div>
@@ -82,7 +84,7 @@ const Society = () => {
                         <ul className="list-disc list-inside">
                             <li>Frontend: Typescript, Next Js, Tailwind, Redux, Firebase, Axios, Websocket, Framer Motion.</li>
                             <li>Backend: Typescript, Express Js, Postgresql, Prisma, Websocket.</li>
-                            <li>Other Tools: Github, VPS, Docker, Nginx.</li>
+                            <li>Other Tools: Github, VPS, Docker, Nginx, CI/CD Github Actions.</li>
                         </ul>
                     </div>
                     <div className="flex flex-col xl:flex-row gap-2 xl:gap-5">
